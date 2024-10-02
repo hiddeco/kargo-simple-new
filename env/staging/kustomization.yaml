@@ -7,6 +7,6 @@ resources:
 namespace: guestbook-simple-staging
 
 images:
-- name: ghcr.io/akuity/guestbook
-  newName: ghcr.io/akuity/guestbook
+- name: ghcr.io/hiddeco/guestbook
+  newName: ghcr.io/hiddeco/guestbook
   newTag: v0.0.1

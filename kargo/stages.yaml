@@ -19,7 +19,7 @@ spec:
       # to the ./repository directory.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-simple.git
+          repoURL: https://github.com/hiddeco/kargo-simple-new.git
           checkout:
           - branch: kustomize
             path: ./repository
@@ -30,7 +30,7 @@ spec:
         config:
           path: ./repository/env/dev
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Commit the changes to the Git repository.
       - uses: git-commit
         as: commit
@@ -50,7 +50,7 @@ spec:
       #     apps:
       #     - name: guestbook-dev
       #       sources:
-      #       - repoURL: https://github.com/akuity/kargo-simple.git
+      #       - repoURL: https://github.com/hiddeco/kargo-simple-new.git
       #         desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -76,7 +76,7 @@ spec:
       # to the ./repository directory.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-simple.git
+          repoURL: https://github.com/hiddeco/kargo-simple-new.git
           checkout:
           - branch: kustomize
             path: ./repository
@@ -87,7 +87,7 @@ spec:
         config:
           path: ./repository/env/staging
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Commit the changes to the Git repository.
       - uses: git-commit
         as: commit
@@ -107,7 +107,7 @@ spec:
       #     apps:
       #       - name: guestbook-staging
       #         sources:
-      #         - repoURL: https://github.com/akuity/kargo-simple.git
+      #         - repoURL: https://github.com/hiddeco/kargo-simple-new.git
       #           desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -133,7 +133,7 @@ spec:
       # to the ./repository directory.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-simple.git
+          repoURL: https://github.com/hiddeco/kargo-simple-new.git
           checkout:
             - branch: kustomize
               path: ./repository
@@ -144,7 +144,7 @@ spec:
         config:
           path: ./repository/env/prod
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Commit the changes to the Git repository.
       - uses: git-commit
         as: commit
@@ -164,5 +164,5 @@ spec:
       #     apps:
       #     - name: guestbook-prod
       #       sources:
-      #       - repoURL: https://github.com/akuity/kargo-simple.git
+      #       - repoURL: https://github.com/hiddeco/kargo-simple-new.git
       #         desiredCommitFromStep: commit
